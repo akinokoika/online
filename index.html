@@ -1,1 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>赵鑫华 - 个人简历</title>
+    <style>
+        /* --- 页面基础设置 --- */
+        body {
+            font-family: "Microsoft YaHei", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        /* 模拟 A4 纸张 */
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+        }
 
+        /* --- 打印样式优化 --- */
+        @media print {
+            body { background: white; margin: 0; padding: 0; }
+            .page { width: 100%; margin: 0; padding: 0; box-shadow: none; min-height: auto; }
+            @page { margin: 15mm 20mm; size: A4; }
+            a { text-decoration: none; color: #000; } /* 打印时链接颜色变黑，但保留点击功能 */
+        }
+
+        /* --- 头部信息 --- */
+        header {
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin: 0 0 10px 0;
+            letter-spacing: 2px;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .links {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* --- 通用标题 --- */
+        h2 {
+            font-size: 18px;
+            color: #333;
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            border-left: 5px solid #333;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        /* --- 技能列表 --- */
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 14px;
+        }
+        .skills-list li {
+            margin-bottom: 6px;
+        }
+        strong { font-weight: 700; color: #000; }
+
+        /* --- 证书列表 --- */
+        .cert-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-size: 14px;
+        }
+        .cert-list li {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        /* --- 项目经历 --- */
+        .project-item { margin-bottom: 20px; }
+        
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+
+        .project-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .project-meta {
+            font-size: 12px;
+            color: #666;
+            font-style: italic;
+        }
+
+        .project-role {
+            font-size: 13px;
+            color: #444;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+
+        ul.project-details {
+            margin: 0;
+            padding-left: 18px;
+            font-size: 14px;
+            color: #444;
+        }
+        ul.project-details li { margin-bottom: 4px; }
+
+        /* --- 教育背景 --- */
+        .edu-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-bottom: 8px;
+            border-bottom: 1px dashed #eee;
+            padding-bottom: 8px;
+        }
+        .edu-school { font-weight: bold; }
+        .edu-details { color: #555; font-size: 13px; margin-top: 2px; }
+
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <header>
+        <h1>赵鑫华</h1>
+        <div class="contact-info">
+            <span>电话：132-8875-6040</span>
+            <span>邮箱：akinokoika@gmail.com</span>
+            <span>求职意向：移动端 / 前端开发 / 软件工程师</span>
+        </div>
+        <div class="links">
+            个人网站：<a href="https://akinokoika.site" target="_blank">akinokoika.site</a> &nbsp;|&nbsp; 
+            GitHub：<a href="https://github.com/akinokoika" target="_blank">github.com/akinokoika</a>
+        </div>
+    </header>
+
+    <h2>🛠 专业技能</h2>
+    <ul class="skills-list">
+        <li><strong>语言：</strong>熟练掌握 <strong>Dart</strong>, <strong>Python</strong>, <strong>JavaScript (ES6+)</strong>, C, C#, Java</li>
+        <li><strong>移动端开发：</strong>熟悉 <strong>Flutter</strong> 跨平台开发流程，熟练掌握 <strong>Widget</strong> 常用布局与页面交互；具备 <strong>SQLite</strong> 本地存储与 <strong>第三方插件</strong> 集成与调试经验</li>
+        <li><strong>Web 前端全栈：</strong>扎实掌握 <strong>HTML5/CSS3/JS</strong>，熟悉 <strong>Vue.js</strong>, Node.js 开发；熟练使用 <strong>Canvas (Konva.js)</strong>；掌握 <strong>MySQL</strong> 数据库设计与 Docker 容器化部署</li>
+        <li><strong>AI 辅助开发：</strong>将 <strong>VS Code</strong> 与 <strong>GitHub Copilot</strong> / <strong>Gemini Pro</strong> 深度整合至工作流，熟练利用 AI 生成样板代码、重构复杂逻辑及排查 Bug，显著提升工作效率</li>
+        <li><strong>工程化与逆向：</strong>精通 <strong>Git</strong> 版本控制；具备逆向分析基础；拥有独立架设服务器与 Linux 运维经验</li>
+    </ul>
+
+    <h2>证书与奖项</h2>
+    <ul class="cert-list">
+        <li><strong>英语六级</strong></li>
+        <li><strong>日语一级 (JLPT-N1)</strong></li>
+        <li><strong>软考中级</strong> (软件设计师)</li>
+        <li><strong>蓝桥杯省二等奖</strong></li>
+        <li>计算机二级</li>
+        <li>信息工程学院网站开发总决赛优秀奖</li>
+    </ul>
+
+    <h2>项目经历</h2>
+
+    <div class="project-item">
+        <div class="project-header">
+            <span class="project-title">Diary (跨平台日记应用) | Flutter, Dart, SQLite</span>
+            <span class="project-meta">2026.01 – 至今</span>
+        </div>
+        <div class="project-role">个人开发者</div>
+        <ul class="project-details">
+            <li>设计并开发了一款基于 <strong>Flutter</strong> 的跨平台日记应用，负责从 UI/UX 设计到全栈代码实现，实现了日记的 <strong>CRUD</strong></li>
+            <li>采用了本地持久化存储方案 <strong>SQLite</strong>，实现了数据的加密存储与离线读写，解决了用户隐私保护与无网环境下的可用性</li>
+            <li>优化了长列表渲染性能，通过 <strong>ListView.builder</strong> 与懒加载机制，降低了大量日志条目的内存占用</li>
+        </ul>
+    </div>
+
+    <div class="project-item">
+        <div class="project-header">
+            <span class="project-title">LAN Walkie-Talkie (局域网对讲机) | Flutter, WebSocket, UDP</span>
+            <span class="project-meta">2026.01 – 至今</span>
+        </div>
+        <div class="project-role">个人开发者</div>
+        <ul class="project-details">
+            <li>开发了一款局域网即时通讯工具，旨在解决多设备环境下短信验证码无法同步的痛点</li>
+            <li>集成 Android 原生短信接口，实现了验证码的实时捕获与自动转发</li>
+            <li>基于 <strong>UDP 广播</strong> 的设备发现机制与基于 <strong>WebSocket</strong> 的全双工通信协议，无需外部服务器即可在局域网内传输语音资源</li>
+        </ul>
+    </div>
+
+    <div class="project-item">
+        <div class="project-header">
+            <span class="project-title">Madoka Blog System (社区博客) | PHP, MySQL, MDUI</span>
+            <span class="project-meta">2020年网站上线</span>
+        </div>
+        <div class="project-role">全栈开发者</div>
+        <ul class="project-details">
+            <li>独立开发了一款基于 <strong>MDUI</strong> 的响应式博客与论坛系统，成功在互联网环境部署上线</li>
+            <li>设计并实现基于 <strong>RBAC</strong> 的用户权限管理（积分、签到、小黑屋）、文章发布、多层级评论及积分等级的完整业务逻辑，使用 PHP 与 <strong>MySQL</strong> 交互实现 <strong>CRUD</strong></li>
+            <li>通过 <strong>Ajax</strong> 实现前后端分离交互，移动端适配确保在手机与 PC 端均有流畅的 Material Design 视觉体验</li>
+        </ul>
+    </div>
+
+    <div class="project-item">
+        <div class="project-header">
+            <span class="project-title">NumPy Neural Network (手写数字识别) | Python, NumPy</span>
+            <span class="project-meta">2021年在Github开源</span>
+        </div>
+        <div class="project-role">算法研究</div>
+        <ul class="project-details">
+            <li>不依赖深度学习框架，仅使用 <strong>NumPy</strong> 库从零构建了全连接神经网络，模型在测试集上的识别准确率达到 97.85%</li>
+            <li>手动实现了前向传播、反向传播及梯度下降算法，深入理解了矩阵运算在神经网络底层的应用</li>
+        </ul>
+    </div>
+
+    <div class="project-item">
+        <div class="project-header">
+            <span class="project-title">DSA Visualization Engine (算法可视化) | Konva.js, Canvas</span>
+            <span class="project-meta">个人学习</span>
+        </div>
+        <div class="project-role">
+            <a href="https://akinokoika.github.io/Red-black-tree-visualization/project/Rbtree.html" target="_blank">[在线demo1]</a>
+            <a href="https://akinokoika.github.io/Graphs-visualization/project/" target="_blank">[在线demo2]</a>
+        </div>
+        <ul class="project-details">
+            <li>基于 <strong>Konva.js</strong> 框架开发高性能 <strong>Canvas</strong> 渲染引擎，支持红黑树的自平衡旋转与图论算法的动态绘制及交互拖拽</li>
+            <li>深度还原 <strong>BFS/DFS/Dijkstra</strong> 等核心算法的执行逻辑，通过自定义 Animation Queue 将抽象的节点变色、路径查找与树旋转过程转化为直观的逐帧可视化演示</li>
+        </ul>
+    </div>
+
+    <div class="project-item">
+        <div class="project-header">
+            <span class="project-title">Stonks-9800 Mod (角色与事件扩展) | GameMaker, GML</span>
+            <span class="project-meta">发布于 Steam 创意工坊</span>
+        </div>
+        <div class="project-role">Mod 开发者</div>
+        <ul class="project-details">
+            <li>通过分析 <strong>GameMaker</strong> 引擎的数据结构，编写 <strong>GML 脚本</strong> 注入了全新的角色交互逻辑与随机事件系统</li>
+            <li>成功将本地化 CSV 与音频文件集成至原游戏资源库，解决了原版游戏架构对修改背景音乐的不兼容问题</li>
+        </ul>
+    </div>
+
+    <h2>教育背景</h2>
+    <div class="edu-item">
+        <span class="edu-school">五邑大学 | 纺织工程 (可穿戴装备) | 本科</span>
+        <span>2023 – 2025</span>
+    </div>
+    <div class="edu-details" style="margin-top: -5px; margin-bottom: 10px;">* 通过统招专升本获得本科学历</div>
+
+    <div class="edu-item">
+        <span class="edu-school">广州华商职业学院 | 计算机网络技术 | 专科</span>
+        <span>2018 – 2021</span>
+    </div>
+    <div class="edu-details" style="margin-top: -5px;">主修课程：计算机网络、Web 开发、数据库原理、Linux 操作系统</div>
+
+</div>
+
+</body>
+</html>
